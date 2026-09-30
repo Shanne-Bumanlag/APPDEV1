@@ -6,6 +6,6 @@ const logNotification = () => {
   console.log("Notification: You have 1 new message.");
 };
 
-console.log(welcome("Taylor"));
+console.log(welcome("Shanne"));
 console.log(multiply(6, 7));
 logNotification();
