@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOM Manipulation Practice</title>
+</head>
+<body>
+  <h1>Interactive Web Page</h1>
+  
+  <button id="themeBtn">Customize Theme Color</button>
+  <p id="statusMsg">Waiting for update...</p>
+
+  <script>
+    // 1. Prompt user for background color on button click
+    const themeBtn = document.getElementById("themeBtn");
+    themeBtn.addEventListener("click", () => {
+      const userColor = prompt("Enter a favorite background color (e.g., lightblue, #ffebcd):");
+      if (userColor) {
+        document.body.style.backgroundColor = userColor;
+      }
+    });
+
+    // 2. Automatically update paragraph text after a delay using setTimeout
+    const statusMsg = document.getElementById("statusMsg");
+    setTimeout(() => {
+      statusMsg.textContent = "Status updated! 2 seconds have elapsed.";
+    }, 2000);
+  </script>
+</body>
+</html>
