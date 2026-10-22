@@ -1,0 +1,260 @@
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+
+
+.loginCard {
+  width: min(100%, 626px);
+  height: 407px;
+  display: flex;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 0;
+  border-radius: 11px;
+  box-shadow: none;
+}
+
+.hero {
+  flex: 0 0 43.3%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 11px;
+  background: #8da9a9;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+
+.formPanel {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 29px 24px 20px;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 5px;
+  margin: 0 0 22px;
+  padding-left: 12px;
+  white-space: nowrap;
+}
+
+.hello {
+  font-family: "Istok Web", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #7d9fa1;
+}
+
+.guyss {
+  font-family: "Istok Web", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #526f80;
+}
+
+
+
+
+.subtitle {
+  color: #89999f;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  margin: 0 0 30px;
+  border-bottom: none;
+}
+
+.activeTab,
+.inactiveTab {
+  border: none;
+  background: transparent;
+  padding: 0 8px 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.activeTab {
+  color: #58798a;
+  border-bottom: 1px solid #58798a;
+}
+
+.inactiveTab {
+  color: #bdcbd2;
+}
+
+.form {
+  width: 100%;
+  max-width: 211px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > label {
+  color: #a8bdca;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+.form > input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #66889a;
+  border-radius: 0;
+  outline: none;
+  padding: 4px 1px 7px;
+  margin-bottom: 22px;
+  background: transparent;
+  color: #526f80;
+  font-size: 12px;
+}
+
+.form > input::placeholder {
+  color: #a8bdca;
+  opacity: 1;
+}
+
+.formOptions {
+  display: none;
+}
+
+.loginButton {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  padding: 7px;
+  background: #4d6c7d;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.loginButton:hover {
+  background: #3e5968;
+}
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 13px 0 12px;
+  color: #a8bdca;
+  font-size: 12px;
+}
+
+.divider span {
+  display: none;
+}
+
+.socialButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.socialButtons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.socialButtons img {
+  display: block;
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.signupText {
+  display: none;
+}
+
+
+@media (max-width: 760px) {
+  .page {
+    padding: 18px;
+  }
+
+  .loginCard {
+    max-width: 480px;
+    flex-direction: column;
+  }
+
+  .hero {
+    min-height: 180px;
+    padding: 18px;
+  }
+
+  .heroImage {
+    max-height: 170px;
+  }
+
+  .formPanel {
+    padding: 32px 26px;
+  }
+
+  .formPanel h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 380px) {
+  .formPanel {
+    padding: 26px 18px;
+  }
+
+  .socialButtons {
+    flex-direction: column;
+  }
+
+  .formOptions {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,20 @@
+
+:root {
+  /* Colors */
+  --color-primary: #526f80;
+  --color-primary-light: #a9becb;
+  --color-heading: #7d9fa1;
+  --color-white: #ffffff;
+  --color-page: #f7f7f7;
+  --color-text: #526f80;
+  --color-border: #7894a3;
+  --color-placeholder: #a9becb;
+
+  /* Typography */
+--font-main: "Istok Web", sans-serif;
+  --font-size-base: 16px;
+
+  /* Shape */
+  --radius-panel: 12px;
+  --radius-button: 3px;
+}
